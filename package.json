@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ng-deploy": "ng build --configuration=production"
+    "ng-deploy-dev": "ng build --configuration=production"
   },
   "private": true,
   "dependencies": {

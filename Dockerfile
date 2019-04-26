@@ -1,3 +1,5 @@
+FROM node:carbon as node
+
 WORKDIR /app
 
 COPY package*.json /app/

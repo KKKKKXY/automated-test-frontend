@@ -15,6 +15,6 @@ cache:
 build-image:
   stage: build
   script:
-  - docker build -t xingyuankang/labAuto-frontend .
+  - docker build -t xingyuankang/labauto-frontend .
   - docker login -u xingyuankang -p XzBh6mqmM5rtxXF
-  - docker push xingyuankang/labAuto-frontend
+  - docker push xingyuankang/labauto-frontend

@@ -1,0 +1,20 @@
+image: docker:latest
+services:
+- docker:dind
+
+stages:
+- build
+
+variables:
+  DOCKER_DRIVER: overlay
+
+cache:
+  paths:
+  - node_modules/
+
+build-image:
+  stage: build
+  script:
+  - docker build -t xingyuankang/lab-frontend .
+  - docker login -u xingyuankang -p XzBh6mqmM5rtxXF
+  - docker push xingyuankang/lab-frontend
